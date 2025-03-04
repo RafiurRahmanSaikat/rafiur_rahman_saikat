@@ -1,12 +1,11 @@
 import {
   BookOpen,
-  Home,
   LayoutGrid,
   Menu,
   MessageSquare,
   Moon,
   Sun,
-  Tags,
+  Tags
 } from "lucide-react";
 import React, { memo, useCallback, useState } from "react";
 

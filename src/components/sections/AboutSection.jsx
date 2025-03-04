@@ -24,7 +24,7 @@ const  AboutSection= () => {
   }, [])
 
   return (
-    <section id="about" className="bg-white py-24 dark:bg-zinc-950">
+    <section id="about" className=" py-24 ">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mb-12 text-center">
           <h2 className="text-3xl font-bold tracking-tight text-zinc-900 dark:text-white sm:text-4xl">About Me</h2>
@@ -68,7 +68,7 @@ const  AboutSection= () => {
             className="flex flex-col justify-center"
           >
             <h3 className="mb-4 text-2xl font-bold text-zinc-900 dark:text-white">
-              Building digital solutions since 2018
+              Building digital solutions since 2022
             </h3>
             <p className="mb-6 text-zinc-600 dark:text-zinc-400">
               I'm Rafiur Rahman Saikat, a full-stack developer with over 5 years of experience in building web

@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import { useTheme } from "../../../hooks/useTheme";
-import AnimatedGradientLines from "../background/AnimatedGridPattern";
+import AnimatedGradientLines from "../background/AnimatedGradientLines";
 import SocialIcon from "../buttons/SocialIcon";
 
 
@@ -12,8 +12,8 @@ const BackgroundGrid = () => {
       className="absolute inset-0 z-0"
       style={{
         backgroundImage: isDarkMode
-          ? "url(\"data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' width='40' height='40' fill='none' stroke-width='1' stroke='rgb(30 58 138 / 0.3)'%3e%3cpath d='M0 .5H31.5V32'/%3e%3c/svg%3e\")"
-          : "url(\"data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' width='40' height='40' fill='none' stroke-width='0.2' stroke='rgb(30 58 138 / 0.5)'%3e%3cpath d='M0 .5H31.5V32'/%3e%3c/svg%3e\")",
+          ? "url(\"data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' width='50' height='50' fill='none' stroke-width='1' stroke='rgb(30 58 138 / 0.3)'%3e%3cpath d='M0 .5H31.5V32'/%3e%3c/svg%3e\")"
+          : "url(\"data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' width='50' height='50' fill='none' stroke-width='0.2' stroke='rgb(30 58 138 / 0.5)'%3e%3cpath d='M0 .5H31.5V32'/%3e%3c/svg%3e\")",
         mask: "linear-gradient(180deg, #000 50%, transparent)",
       }}
     />
@@ -21,12 +21,11 @@ const BackgroundGrid = () => {
 };
 
 const HeroContent = () => {
-  const { isDarkMode } = useTheme();
 
   return (
-    <div className="container relative z-10 mx-auto flex min-h-screen flex-col items-center justify-center px-4 py-20 sm:px-6 lg:px-8">
+    <div className="container relative z-10 mx-auto flex min-h-[55vh] flex-col items-center justify-center px-4 py-28 sm:px-6 lg:px-8">
     {/* Job title badge */}
-    <div className="mb-4 flex items-center justify-center">
+    {/* <div className="mt-4 flex items-center justify-center">
       <span className="inline-flex items-center rounded-full border border-zinc-200 bg-white/80 px-3 py-1 text-sm font-medium text-zinc-800 backdrop-blur-sm dark:border-zinc-800 dark:bg-zinc-950/80 dark:text-zinc-200">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -45,18 +44,19 @@ const HeroContent = () => {
         </svg>
         Full-Stack Developer & Softwere Engineer
       </span>
-    </div>
+    </div> */}
 
     {/* Main heading with gradient text */}
-    <h1 className="mb-6 text-center text-4xl font-bold tracking-tight text-zinc-900 dark:text-white sm:text-5xl md:text-6xl lg:text-7xl">
-      Hi, I'm{" "}
-      <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent dark:from-blue-400 dark:to-purple-400">
-        Rafiur Rahman Saikat
-      </span>
-    </h1>
+    {/* <h1 className="mb-6 text-center text-4xl font-bold tracking-tight text-zinc-900 dark:text-white sm:text-5xl md:text-6xl lg:text-7xl"> */}
+    <div className="m-6 text-center text-4xl font-bold tracking-tight text-zinc-800 dark:text-white sm:text-5xl md:text-6xl lg:text-9xl ">
+      I'm
+      <p className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent dark:from-blue-400 dark:to-purple-400 font-pacifico  font-extralight">
+        Rafiur Rahman Saikat .
+      </p>
+    </div>
 
     {/* Subtitle */}
-    <p className="mb-8 max-w-2xl text-center text-lg text-zinc-600 dark:text-zinc-400">
+    <p className="mb-8 max-w-2xl text-center text-lg text-zinc-700 dark:text-zinc-300">
       Building robust, scalable, and innovative web applications with passion and precision. Specialized in React,
       Next.js, Node.js, and modern web technologies.
     </p>
@@ -91,12 +91,7 @@ const HeroContent = () => {
           </span>
         </span>
       </a>
-      {/* <a
-        href="#contact"
-        className="rounded-lg border border-zinc-300 bg-transparent px-5 py-2.5 text-zinc-900 hover:bg-zinc-100 focus:outline-none focus:ring-4 focus:ring-zinc-200 dark:border-zinc-700 dark:text-white dark:hover:bg-zinc-800 dark:focus:ring-zinc-700"
-      >
-        Contact Me
-      </a> */}
+
     </div>
 
     {/* Social Media Links */}
@@ -183,23 +178,7 @@ const HeroContent = () => {
       />
     </div>
 
-    {/* Tech stack tags */}
-    {/* <div className="absolute bottom-10 left-0 right-0 flex justify-center">
-      <div className="flex flex-wrap justify-center gap-2">
-        {["React", "Next.js", "TypeScript", "Node.js", "Tailwind"].map((tech, index) => (
-          <span
-            key={tech}
-            className="inline-flex items-center rounded-full bg-zinc-100 px-2.5 py-0.5 text-xs font-medium text-zinc-800 dark:bg-zinc-800 dark:text-zinc-200"
-            style={{
-              animationDelay: `${index * 0.1}s`,
-              animation: "pulse 2s infinite",
-            }}
-          >
-            {tech}
-          </span>
-        ))}
-      </div>
-    </div> */}
+
   </div>
 
   );
@@ -207,14 +186,12 @@ const HeroContent = () => {
 
 const HeroSection = () => {
   const sectionRef = useRef(null);
-  const { isDarkMode } = useTheme();
+
 
   return (
     <section
       ref={sectionRef}
-      className={`relative min-h-[600px] overflow-hidden ${
-        isDarkMode ? 'bg-zinc-950' : 'bg-zinc-50'
-      }`}
+      className={`relative overflow-hidden `}
     >
       <HeroContent />
       <AnimatedGradientLines containerRef={sectionRef} />

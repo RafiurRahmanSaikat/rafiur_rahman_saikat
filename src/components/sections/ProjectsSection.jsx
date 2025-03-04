@@ -52,7 +52,7 @@ const ProjectsSection = () => {
     activeCategory === "All" ? projects : projects.filter((project) => project.category === activeCategory)
 
   return (
-    <section id="projects" className="bg-white py-24 dark:bg-zinc-950">
+    <section id="projects" className="py-24 ">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeading title="Featured Projects" subtitle="A selection of my recent work and personal projects" />
 

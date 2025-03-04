@@ -1,5 +1,5 @@
 // UI Components
-export { default as AnimatedGridPattern } from "./ui/background/AnimatedGridPattern"
+export { default as AnimatedGradientLines } from "./ui/background/AnimatedGradientLines"
 export { default as InteractiveGridPattern } from "./ui/background/InteractiveGridPattern"
 export { default as Footer } from "./ui/footers/Footer"
 export { default as HeroSection } from "./ui/heros/HeroSection"
