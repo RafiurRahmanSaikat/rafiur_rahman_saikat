@@ -64,7 +64,10 @@ const HeroContent = () => {
     {/* CTA Buttons */}
     <div className="mb-12 flex flex-col space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
       <a
-        href="#projects"
+
+        href="https://drive.google.com/file/d/1cNPzJDZIgPfxL5dY5cz5m0jCsLOFQTHS/view?usp=sharing"
+        target="_blank"
+        rel="noopener noreferrer"
         className="group relative inline-flex items-center justify-center overflow-hidden rounded-lg bg-gradient-to-br from-blue-500 to-purple-600 p-0.5 font-medium text-white hover:text-white focus:outline-none focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-800"
       >
         <span className="relative rounded-md  px-5 py-2.5 transition-all duration-75 ease-in group-hover:bg-opacity-0 ">
@@ -181,7 +184,7 @@ const HeroContent = () => {
     </div>
 
     {/* Tech stack tags */}
-    <div className="absolute bottom-10 left-0 right-0 flex justify-center">
+    {/* <div className="absolute bottom-10 left-0 right-0 flex justify-center">
       <div className="flex flex-wrap justify-center gap-2">
         {["React", "Next.js", "TypeScript", "Node.js", "Tailwind"].map((tech, index) => (
           <span
@@ -196,66 +199,9 @@ const HeroContent = () => {
           </span>
         ))}
       </div>
-    </div>
+    </div> */}
   </div>
-    // <div className="relative z-20 mx-auto flex max-w-6xl flex-col items-center justify-center px-4 py-24 md:px-8 md:py-36">
-    //   <div className="relative">
-    //     <span className={`relative z-10 mb-4 inline-block rounded-full border ${
-    //       isDarkMode ? 'border-zinc-700 bg-zinc-900/20' : 'border-zinc-300 bg-zinc-100/70'
-    //     } px-3 py-1.5 text-xs ${
-    //       isDarkMode ? 'text-zinc-50' : 'text-zinc-800'
-    //     }`}>
-    //       Full-Stack Developer
-    //       <span className={`absolute bottom-0 left-3 right-3 h-[1px] bg-gradient-to-r ${
-    //         isDarkMode
-    //           ? 'from-zinc-500/0 via-zinc-300 to-zinc-500/0'
-    //           : 'from-zinc-300/0 via-zinc-600 to-zinc-300/0'
-    //       }`}></span>
-    //     </span>
-    //   </div>
-    //   <h1 className={`mb-3 text-center text-3xl font-bold leading-tight ${
-    //     isDarkMode ? 'text-zinc-50' : 'text-zinc-800'
-    //   } sm:text-4xl md:text-5xl lg:text-7xl`}>
-    //     Building Digital Experiences
-    //   </h1>
-    //   <p className={`mb-9 max-w-2xl text-center text-base ${
-    //     isDarkMode ? 'text-zinc-400' : 'text-zinc-600'
-    //   } sm:text-lg`}>
-    //     Crafting responsive, high-performance web applications with React, Tailwind CSS, and modern JavaScript.
-    //   </p>
-    //   <div className="flex flex-col items-center gap-6 sm:flex-row">
-    //     <button className={`flex items-center gap-2 rounded-md ${
-    //       isDarkMode
-    //         ? 'bg-gradient-to-br from-blue-400 to-blue-700 text-zinc-50 ring-blue-500/50'
-    //         : 'bg-gradient-to-br from-blue-500 to-blue-700 text-white ring-blue-400/50'
-    //     } px-4 py-2 ring-2 ring-offset-2 ${
-    //       isDarkMode ? 'ring-offset-zinc-950' : 'ring-offset-white'
-    //     } transition-all hover:scale-[1.02] hover:ring-transparent active:scale-[0.98] active:ring-blue-500/70`}>
-    //       View Projects
-    //       <svg
-    //         stroke="currentColor"
-    //         fill="none"
-    //         strokeWidth="2"
-    //         viewBox="0 0 24 24"
-    //         strokeLinecap="round"
-    //         strokeLinejoin="round"
-    //         height="1em"
-    //         width="1em"
-    //         xmlns="http://www.w3.org/2000/svg"
-    //       >
-    //         <line x1="5" y1="12" x2="19" y2="12"></line>
-    //         <polyline points="12 5 19 12 12 19"></polyline>
-    //       </svg>
-    //     </button>
-    //     <button className={`rounded-md px-4 py-2 ${
-    //       isDarkMode
-    //         ? 'text-zinc-100 hover:bg-zinc-800 hover:text-zinc-50'
-    //         : 'text-zinc-700 hover:bg-zinc-100 hover:text-zinc-900'
-    //     } transition-all hover:scale-[1.02] active:scale-[0.98]`}>
-    //       Contact Me
-    //     </button>
-    //   </div>
-    // </div>
+
   );
 };
 
