@@ -1,0 +1,208 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@keyframes move-down {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(calc(100vh + 64px));
+  }
+}
+
+.animate-move-down {
+  animation: move-down 7s linear forwards;
+}
+
+@keyframes slideRight {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes slideDown {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes gradient-x {
+  0%,
+  100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+/* Extend with Tailwind Custom Utilities */
+@layer utilities {
+  .animate-pulse-slow {
+    animation: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+
+  .animate-float {
+    animation: float 3s ease-in-out infinite;
+  }
+
+  .animate-spin-slow {
+    animation: spin-slow 8s linear infinite;
+  }
+
+  .animate-gradient-x {
+    animation: gradient-x 15s ease infinite;
+  }
+
+  .bg-size-200 {
+    background-size: 200% 200%;
+  }
+
+  .animate-cursor-blink {
+    animation: blink 1s infinite;
+  }
+  .text-syntax-keyword {
+    color: var(--syntax-keyword);
+  }
+  .text-syntax-property {
+    color: var(--syntax-property);
+  }
+  .text-syntax-string {
+    color: var(--syntax-string);
+  }
+  .text-syntax-bracket {
+    color: var(--syntax-bracket);
+  }
+  .text-syntax-variable {
+    color: var(--syntax-variable);
+  }
+  .text-syntax-comment {
+    color: var(--syntax-comment);
+  }
+}
+
+/* Line styling for code profile */
+.line {
+  @apply h-6 flex items-center;
+}
+
+
+/* Tailwind Custom Color Classes */
+:root {
+  --border: 210, 10%, 90%;
+  --input: 210, 10%, 95%;
+  --ring: 210, 10%, 80%;
+  --background: 210, 10%, 15%;
+  --foreground: 210, 10%, 95%;
+  --primary: 215, 85%, 50%;
+  --primary-foreground: 215, 50%, 95%;
+  --secondary: 150, 50%, 45%;
+  --secondary-foreground: 150, 50%, 95%;
+  --destructive: 0, 100%, 50%;
+  --destructive-foreground: 0, 100%, 95%;
+  --muted: 210, 10%, 70%;
+  --muted-foreground: 210, 10%, 40%;
+  --accent: 290, 80%, 60%;
+  --accent-foreground: 290, 80%, 95%;
+  --popover: 210, 10%, 25%;
+  --popover-foreground: 210, 10%, 85%;
+  --card: 210, 10%, 20%;
+  --card-foreground: 210, 10%, 90%;
+  --radius: 8px; /* Customize based on your design */
+  --border: 210, 10%, 90%;
+  --input: 210, 10%, 95%;
+  --ring: 210, 10%, 80%;
+  --background: 210, 10%, 15%;
+  --foreground: 210, 10%, 95%;
+  --primary: 215, 85%, 50%;
+  --primary-foreground: 215, 50%, 95%;
+  --secondary: 150, 50%, 45%;
+  --secondary-foreground: 150, 50%, 95%;
+  --destructive: 0, 100%, 50%;
+  --destructive-foreground: 0, 100%, 95%;
+  --muted: 210, 10%, 70%;
+  --muted-foreground: 210, 10%, 40%;
+  --accent: 290, 80%, 60%;
+  --accent-foreground: 290, 80%, 95%;
+  --popover: 210, 10%, 25%;
+  --popover-foreground: 210, 10%, 85%;
+  --card: 210, 10%, 20%;
+  --card-foreground: 210, 10%, 90%;
+  --radius: 8px; /* Customize based on your design */
+
+  /* Syntax highlighting colors */
+  --syntax-keyword: #c084fc;  /* Purple */
+  --syntax-property: #60a5fa; /* Light Blue */
+  --syntax-string: #4ade80;   /* Green */
+  --syntax-bracket: #facc15;  /* Yellow */
+  --syntax-variable: #22d3ee; /* Cyan */
+  --syntax-comment: #94a3b8;  /* Slate */
+  --syntax-function: #f472b6;  /* Pink */
+}
+
+
+
+/* Dark Mode Support */
+.dark {
+  --border: 210, 10%, 30%;
+  --input: 210, 10%, 40%;
+  --ring: 210, 10%, 60%;
+  --background: 210, 10%, 5%;
+  --foreground: 210, 10%, 95%;
+  --primary: 215, 85%, 40%;
+  --primary-foreground: 215, 50%, 90%;
+  --secondary: 150, 50%, 35%;
+  --secondary-foreground: 150, 50%, 90%;
+  --destructive: 0, 100%, 40%;
+  --destructive-foreground: 0, 100%, 90%;
+  --muted: 210, 10%, 55%;
+  --muted-foreground: 210, 10%, 25%;
+  --accent: 290, 80%, 50%;
+  --accent-foreground: 290, 80%, 95%;
+  --popover: 210, 10%, 15%;
+  --popover-foreground: 210, 10%, 85%;
+  --card: 210, 10%, 10%;
+  --card-foreground: 210, 10%, 85%;
+}
+
