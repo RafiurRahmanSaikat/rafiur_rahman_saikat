@@ -42,17 +42,10 @@ const  AboutSection= () => {
               transition: "opacity 0.5s ease-out, transform 0.5s ease-out",
             }}
           >
-            <div className="relative h-full overflow-hidden rounded-lg">
-              {/* <div className="absolute inset-0 bg-gradient-to-br from-blue-500/20 to-purple-500/20 dark:from-blue-500/10 dark:to-purple-500/10"></div> */}
-              <CodeProfile/>
+            <div className="relative h-full w-full overflow-hidden rounded-lg">
 
-              {/* <img
+              <CodeProfile />
 
-                src="/placeholder.svg?height=600&width=500"
-                alt="Rafiur Rahman Saikat"
-                className="h-full w-full object-cover"
-              /> */}
-              {/* <div className="absolute inset-0 bg-gradient-to-t from-zinc-900/50 to-transparent"></div> */}
             </div>
           </div>
 
