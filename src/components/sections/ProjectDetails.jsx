@@ -1,4 +1,3 @@
-
 import {
   BookOpen,
   Code,
@@ -6,74 +5,128 @@ import {
   FileText,
   Github,
   Layers,
+  Loader2,
   Puzzle,
   X
 } from 'lucide-react';
 import React, { useCallback, useEffect, useState } from 'react';
+import ReactMarkdown from 'react-markdown';
 
 const ProjectDetails = ({ project, onClose }) => {
   const [activeTab, setActiveTab] = useState('overview');
   const [readmeContent, setReadmeContent] = useState('');
+  const [isLoading, setIsLoading] = useState(false);
+  const [error, setError] = useState(null);
 
-  // Keyboard event handler
-  const handleKeyDown = useCallback((event) => {
-    if (event.key === 'Escape') {
-      onClose();
-    }
-  }, [onClose]);
-
-  // Effect for adding and removing keyboard event listener
-  useEffect(() => {
-    document.addEventListener('keydown', handleKeyDown);
-    return () => {
-      document.removeEventListener('keydown', handleKeyDown);
+// Extract GitHub username and repo name from GitHub URL
+const extractRepoInfo = (githubUrl) => {
+  try {
+    const url = new URL(githubUrl);
+    const pathParts = url.pathname.split('/').filter(Boolean);
+    return {
+      username: pathParts[0],
+      repo: pathParts[1]
     };
-  }, [handleKeyDown]);
+  } catch (err) {
+    console.error('Invalid GitHub URL', err);
+    return null;
+  }
+};
 
-  // Fetch README content (simulated - you'd replace with actual fetching logic)
-  useEffect(() => {
-    const fetchReadme = async () => {
-      try {
-        // In a real app, fetch from GitHub API or local file
-        const response = await fetch(`/readmes/${project.id}.md`);
-        const content = await response.text();
-        setReadmeContent(content);
-      } catch (error) {
-        console.error('Failed to fetch README', error);
-        setReadmeContent('No README available for this project.');
+// Fetch README from GitHub
+const fetchReadmeFromGitHub = useCallback(async () => {
+  if (!project.githubUrl) {
+    setError('No GitHub URL provided');
+    return;
+  }
+
+  const repoInfo = extractRepoInfo(project.githubUrl);
+  if (!repoInfo) {
+    setError('Unable to parse GitHub URL');
+    return;
+  }
+
+  setIsLoading(true);
+  setError(null);
+
+  try {
+    // GitHub README fetch URL
+    const response = await fetch(
+      `https://raw.githubusercontent.com/${repoInfo.username}/${repoInfo.repo}/main/README.md`
+    );
+
+    if (!response.ok) {
+      // Try master branch if main fails
+      const masterResponse = await fetch(
+        `https://raw.githubusercontent.com/${repoInfo.username}/${repoInfo.repo}/master/README.md`
+      );
+
+      if (!masterResponse.ok) {
+        throw new Error('README not found');
       }
-    };
 
-    fetchReadme();
-  }, [project.id]);
-
-  const tabs = [
-    {
-      id: 'overview',
-      icon: <BookOpen className="mr-2 h-5 w-5" />,
-      label: 'Overview'
-    },
-    {
-      id: 'technologies',
-      icon: <Layers className="mr-2 h-5 w-5" />,
-      label: 'Technologies'
-    },
-    {
-      id: 'features',
-      icon: <Puzzle className="mr-2 h-5 w-5" />,
-      label: 'Features'
-    },
-    {
-      id: 'readme',
-      icon: <FileText className="mr-2 h-5 w-5" />,
-      label: 'README'
-    },
-    {
-      id: 'code',
-      icon: <Code className="mr-2 h-5 w-5" />,
-      label: 'Code Structure'
+      const masterContent = await masterResponse.text();
+      setReadmeContent(masterContent);
+    } else {
+      const content = await response.text();
+      setReadmeContent(content);
     }
-  ];
+  } catch (err) {
+    console.error('Failed to fetch README', err);
+    setError('Could not fetch README. The repository might be private or README might not exist.');
+    setReadmeContent('');
+  } finally {
+    setIsLoading(false);
+  }
+}, [project.githubUrl]);
+
+// Fetch README when component mounts or GitHub URL changes
+useEffect(() => {
+  fetchReadmeFromGitHub();
+}, [fetchReadmeFromGitHub]);
+
+// Keyboard event handler
+const handleKeyDown = useCallback((event) => {
+  if (event.key === 'Escape') {
+    onClose();
+  }
+}, [onClose]);
+
+// Effect for adding and removing keyboard event listener
+useEffect(() => {
+  document.addEventListener('keydown', handleKeyDown);
+  return () => {
+    document.removeEventListener('keydown', handleKeyDown);
+  };
+}, [handleKeyDown]);
+
+const tabs = [
+  {
+    id: 'overview',
+    icon: <BookOpen className="mr-2 h-5 w-5" />,
+    label: 'Overview'
+  },
+  {
+    id: 'technologies',
+    icon: <Layers className="mr-2 h-5 w-5" />,
+    label: 'Technologies'
+  },
+  {
+    id: 'features',
+    icon: <Puzzle className="mr-2 h-5 w-5" />,
+    label: 'Features'
+  },
+  {
+    id: 'readme',
+    icon: <FileText className="mr-2 h-5 w-5" />,
+    label: 'README'
+  },
+  {
+    id: 'code',
+    icon: <Code className="mr-2 h-5 w-5" />,
+    label: 'Code Structure'
+  }
+];
 
   return (
     <div
@@ -135,8 +188,8 @@ const ProjectDetails = ({ project, onClose }) => {
             </div>
           </div>
 
-          {/* Tabs */}
-          <div className="border-b border-zinc-200 dark:border-zinc-700 bg-zinc-50 dark:bg-zinc-900">
+            {/* Tabs */}
+            <div className="border-b border-zinc-200 dark:border-zinc-700 bg-zinc-50 dark:bg-zinc-900">
             <nav className="flex justify-center overflow-x-auto">
               {tabs.map(tab => (
                 <button
@@ -154,7 +207,47 @@ const ProjectDetails = ({ project, onClose }) => {
               ))}
             </nav>
           </div>
-
+{/* README Tab Content */}
+{activeTab === 'readme' && (
+            <div className="p-6">
+              {isLoading ? (
+                <div className="flex justify-center items-center h-64">
+                  <Loader2 className="h-8 w-8 animate-spin text-blue-500" />
+                </div>
+              ) : error ? (
+                <div className="text-center text-red-500 p-4">
+                  {error}
+                </div>
+              ) : (
+                <div className="prose dark:prose-invert max-w-none">
+                  <ReactMarkdown
+                    components={{
+                      h1: ({node, ...props}) => (
+                        <h1
+                          className="text-2xl font-bold mb-4 text-zinc-800 dark:text-white"
+                          {...props}
+                        />
+                      ),
+                      code: ({node, ...props}) => (
+                        <code
+                          className="bg-zinc-100 dark:bg-zinc-800 rounded px-1 py-0.5 text-sm"
+                          {...props}
+                        />
+                      ),
+                      pre: ({node, ...props}) => (
+                        <pre
+                          className="bg-zinc-100 dark:bg-zinc-800 p-4 rounded-lg overflow-x-auto"
+                          {...props}
+                        />
+                      )
+                    }}
+                  >
+                    {readmeContent}
+                  </ReactMarkdown>
+                </div>
+              )}
+            </div>
+          )}
           {/* Content Sections */}
           <div className="p-8 max-h-[calc(100vh-200px)] overflow-y-auto">
             {activeTab === 'overview' && (
