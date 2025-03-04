@@ -8,8 +8,8 @@ const Footer = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
           <div>
-            <h3 className="mb-4 text-lg font-bold text-zinc-900 dark:text-white">Rafiur Rahman Saikat</h3>
-            <p className="mb-4 text-zinc-600 dark:text-zinc-400">
+            <h3 className="mb-4 text-lg font-bold text-zinc-800 dark:text-white">Rafiur Rahman Saikat</h3>
+            <p className="mb-4 text-zinc-600 dark:text-zinc-300">
               Full-stack developer specializing in building exceptional digital experiences.
             </p>
             <div className="flex space-x-4">
@@ -97,8 +97,8 @@ const Footer = () => {
           </div>
 
           <div>
-            <h3 className="mb-4 text-lg font-bold text-zinc-900 dark:text-white">Quick Links</h3>
-            <ul className="space-y-2 text-zinc-600 dark:text-zinc-400">
+            <h3 className="mb-4 text-lg font-bold text-zinc-800 dark:text-white">Quick Links</h3>
+            <ul className="space-y-2 text-zinc-600 dark:text-zinc-300">
               <li>
                 <a href="#home" className="hover:text-blue-600 dark:hover:text-blue-400">
                   Home
@@ -123,8 +123,8 @@ const Footer = () => {
           </div>
 
           <div>
-            <h3 className="mb-4 text-lg font-bold text-zinc-900 dark:text-white">Services</h3>
-            <ul className="space-y-2 text-zinc-600 dark:text-zinc-400">
+            <h3 className="mb-4 text-lg font-bold text-zinc-800 dark:text-white">Services</h3>
+            <ul className="space-y-2 text-zinc-600 dark:text-zinc-300">
               <li>Web Development</li>
               <li>Frontend Development</li>
               <li>Backend Development</li>
@@ -133,8 +133,8 @@ const Footer = () => {
           </div>
 
           <div>
-            <h3 className="mb-4 text-lg font-bold text-zinc-900 dark:text-white">Contact</h3>
-            <address className="not-italic text-zinc-600 dark:text-zinc-400">
+            <h3 className="mb-4 text-lg font-bold text-zinc-800 dark:text-white">Contact</h3>
+            <address className="not-italic text-zinc-600 dark:text-zinc-300">
               <p>Sylhet, Bangladesh</p>
               <p className="mt-2">md.rafiur.rahman.saikat@gmail.com</p>
               <p className="mt-2">+8801647076735</p>
@@ -142,7 +142,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="mt-8 border-t border-zinc-200 pt-8 text-center text-sm text-zinc-600 dark:border-zinc-800 dark:text-zinc-400">
+        <div className="mt-8 border-t border-zinc-200 pt-8 text-center text-sm text-zinc-600 dark:border-zinc-800 dark:text-zinc-300">
           <p>© {currentYear} Rafiur Rahman Saikat . All rights reserved.</p>
         </div>
       </div>

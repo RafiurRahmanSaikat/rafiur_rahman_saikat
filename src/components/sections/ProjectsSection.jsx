@@ -116,12 +116,12 @@ const ProjectsSection = () => {
               </div>
               <div className="p-6">
                 <div className="mb-2 flex items-center justify-between">
-                  <h3 className="text-xl font-bold text-zinc-900 dark:text-white">{project.title}</h3>
+                  <h3 className="text-xl font-bold text-zinc-800 dark:text-white">{project.title}</h3>
                   <span className="rounded-full bg-zinc-100 px-2 py-1 text-xs font-medium text-zinc-800 dark:bg-zinc-800 dark:text-zinc-200">
                     {project.category}
                   </span>
                 </div>
-                <p className="mb-4 text-zinc-600 dark:text-zinc-400">{project.description}</p>
+                <p className="mb-4 text-zinc-600 dark:text-zinc-300">{project.description}</p>
                 <div className="flex flex-wrap gap-2">
                   {project.tags.map((tag) => (
                     <span
@@ -142,7 +142,7 @@ const ProjectsSection = () => {
             href="https://github.com/RafiurRahmanSaikat"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center rounded-lg border border-zinc-300 bg-white px-5 py-2.5 text-center text-sm font-medium text-zinc-900 hover:bg-zinc-100 focus:outline-none focus:ring-4 focus:ring-zinc-200 dark:border-zinc-700 dark:bg-zinc-800 dark:text-white dark:hover:bg-zinc-700 dark:focus:ring-zinc-700"
+            className="inline-flex items-center rounded-lg border border-zinc-300 bg-white px-5 py-2.5 text-center text-sm font-medium text-zinc-800 hover:bg-zinc-100 focus:outline-none focus:ring-4 focus:ring-zinc-200 dark:border-zinc-700 dark:bg-zinc-800 dark:text-white dark:hover:bg-zinc-700 dark:focus:ring-zinc-700"
           >
             <Github className="mr-2 h-5 w-5" />
             View More Projects on GitHub

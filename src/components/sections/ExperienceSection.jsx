@@ -63,12 +63,12 @@
 //                           <GraduationCap className="h-4 w-4 text-blue-600 dark:text-blue-400" />
 //                         )}
 //                       </div>
-//                       <h3 className="text-lg font-bold text-zinc-900 dark:text-white">{exp.title}</h3>
+//                       <h3 className="text-lg font-bold text-zinc-800 dark:text-white">{exp.title}</h3>
 //                     </div>
 
 //                     <div className="mb-4">
 //                       <div className="text-zinc-800 dark:text-zinc-200">{exp.company}</div>
-//                       <div className="flex items-center text-sm text-zinc-600 dark:text-zinc-400">
+//                       <div className="flex items-center text-sm text-zinc-600 dark:text-zinc-300">
 //                         <span>{exp.location}</span>
 //                         <span className="mx-2">•</span>
 //                         <span className="flex items-center">
@@ -78,7 +78,7 @@
 //                       </div>
 //                     </div>
 
-//                     <p className="text-zinc-600 dark:text-zinc-400">{exp.description}</p>
+//                     <p className="text-zinc-600 dark:text-zinc-300">{exp.description}</p>
 //                   </div>
 //                 </motion.div>
 //               ))}
@@ -97,10 +97,10 @@ const ExperienceSection = () => {
     <section id="experience" className=" py-24 ">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mb-12 text-center">
-          <h2 className="text-3xl font-bold tracking-tight text-zinc-900 dark:text-white sm:text-4xl">
+          <h2 className="text-3xl font-bold tracking-tight text-zinc-800 dark:text-white sm:text-4xl">
             Experience & Education
           </h2>
-          <p className="mt-4 max-w-2xl mx-auto text-lg text-zinc-600 dark:text-zinc-400">
+          <p className="mt-4 max-w-2xl mx-auto text-lg text-zinc-600 dark:text-zinc-300">
             My professional journey and academic background
           </p>
         </div>
@@ -135,12 +135,12 @@ const ExperienceSection = () => {
                       <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
                     </svg>
                   </div>
-                  <h3 className="text-lg font-bold text-zinc-900 dark:text-white">SOS Children Village</h3>
+                  <h3 className="text-lg font-bold text-zinc-800 dark:text-white">SOS Children Village</h3>
                 </div>
 
                 <div className="mb-4">
                   <div className="text-zinc-800 dark:text-zinc-200">Sylhet, Bangladesh</div>
-                  <div className="flex items-center text-sm text-zinc-600 dark:text-zinc-400">
+                  <div className="flex items-center text-sm text-zinc-600 dark:text-zinc-300">
                     <span className="flex items-center">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -164,7 +164,7 @@ const ExperienceSection = () => {
                   </div>
                 </div>
 
-                <p className="text-zinc-600 dark:text-zinc-400">
+                <p className="text-zinc-600 dark:text-zinc-300">
                   Working at SOS Children Village in Sylhet, contributing to the welfare and development of children in
                   need.
                 </p>
@@ -195,12 +195,12 @@ const ExperienceSection = () => {
                       <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
                     </svg>
                   </div>
-                  <h3 className="text-lg font-bold text-zinc-900 dark:text-white">Learning Full-Stack Development & Softwere Engineer</h3>
+                  <h3 className="text-lg font-bold text-zinc-800 dark:text-white">Learning Full-Stack Development & Softwere Engineer</h3>
                 </div>
 
                 <div className="mb-4">
                   <div className="text-zinc-800 dark:text-zinc-200">Online Platfrom</div>
-                  <div className="flex items-center text-sm text-zinc-600 dark:text-zinc-400">
+                  <div className="flex items-center text-sm text-zinc-600 dark:text-zinc-300">
                     <span className="flex items-center">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -224,7 +224,7 @@ const ExperienceSection = () => {
                   </div>
                 </div>
 
-                <p className="text-zinc-600 dark:text-zinc-400">
+                <p className="text-zinc-600 dark:text-zinc-300">
                   Building large-scale web applications and projects for various clients. Focused on creating robust,
                   scalable solutions using modern web technologies.
                 </p>
@@ -256,12 +256,12 @@ const ExperienceSection = () => {
                       <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
                     </svg>
                   </div>
-                  <h3 className="text-lg font-bold text-zinc-900 dark:text-white">Bachelor's in English Literature</h3>
+                  <h3 className="text-lg font-bold text-zinc-800 dark:text-white">Bachelor's in English Literature</h3>
                 </div>
 
                 <div className="mb-4">
                   <div className="text-zinc-800 dark:text-zinc-200">National University, Bangladesh</div>
-                  <div className="flex items-center text-sm text-zinc-600 dark:text-zinc-400">
+                  <div className="flex items-center text-sm text-zinc-600 dark:text-zinc-300">
                     <span className="flex items-center">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -285,7 +285,7 @@ const ExperienceSection = () => {
                   </div>
                 </div>
 
-                <p className="text-zinc-600 dark:text-zinc-400">
+                <p className="text-zinc-600 dark:text-zinc-300">
                   Studied English Literature while simultaneously developing skills in web development and programming
                   through self-learning and online courses.
                 </p>

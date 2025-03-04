@@ -24,11 +24,10 @@ const  AboutSection= () => {
   }, [])
 
   return (
-    <section id="about" className=" py-24 ">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+      <section  id="about" className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mb-12 text-center">
-          <h2 className="text-3xl font-bold tracking-tight text-zinc-900 dark:text-white sm:text-4xl">About Me</h2>
-          <p className="mt-4 max-w-2xl mx-auto text-lg text-zinc-600 dark:text-zinc-400">
+          <h2 className="text-3xl font-bold tracking-tight text-zinc-800 dark:text-white sm:text-4xl">About Me</h2>
+          <p className="mt-4 max-w-2xl mx-auto text-lg text-zinc-600 dark:text-zinc-300">
             I'm a passionate full-stack developer with a focus on creating efficient, scalable, and user-friendly web
             applications.
           </p>
@@ -67,20 +66,20 @@ const  AboutSection= () => {
             }}
             className="flex flex-col justify-center"
           >
-            <h3 className="mb-4 text-2xl font-bold text-zinc-900 dark:text-white">
+            <h3 className="mb-4 text-2xl font-bold text-zinc-800 dark:text-white">
               Building digital solutions since 2022
             </h3>
-            <p className="mb-6 text-zinc-600 dark:text-zinc-400">
+            <p className="mb-6 text-zinc-600 dark:text-zinc-300">
               I'm Rafiur Rahman Saikat, a full-stack developer with over 5 years of experience in building web
               applications. I specialize in JavaScript technologies across the stack and have a passion for creating
               clean, efficient, and user-friendly solutions.
             </p>
-            <p className="mb-6 text-zinc-600 dark:text-zinc-400">
+            <p className="mb-6 text-zinc-600 dark:text-zinc-300">
               My journey in web development started with a curiosity about how websites work, which led me to dive deep
               into HTML, CSS, and JavaScript. Since then, I've expanded my skills to include modern frameworks and
               libraries like React, Next.js, Node.js, and more.
             </p>
-            <p className="mb-8 text-zinc-600 dark:text-zinc-400">
+            <p className="mb-8 text-zinc-600 dark:text-zinc-300">
               I enjoy solving complex problems and turning ideas into reality through code. When I'm not coding, you can
               find me exploring new technologies, contributing to open-source projects, or solving algorithmic
               challenges.
@@ -104,8 +103,8 @@ const  AboutSection= () => {
                   <polyline points="16 18 22 12 16 6"></polyline>
                   <polyline points="8 6 2 12 8 18"></polyline>
                 </svg>
-                <h4 className="mb-1 font-semibold text-zinc-900 dark:text-white">Frontend</h4>
-                <p className="text-sm text-zinc-600 dark:text-zinc-400">
+                <h4 className="mb-1 font-semibold text-zinc-800 dark:text-white">Frontend</h4>
+                <p className="text-sm text-zinc-600 dark:text-zinc-300">
                   Creating responsive and interactive user interfaces
                 </p>
               </div>
@@ -127,8 +126,8 @@ const  AboutSection= () => {
                   <line x1="6" x2="6" y1="6" y2="6"></line>
                   <line x1="6" x2="6" y1="18" y2="18"></line>
                 </svg>
-                <h4 className="mb-1 font-semibold text-zinc-900 dark:text-white">Backend</h4>
-                <p className="text-sm text-zinc-600 dark:text-zinc-400">
+                <h4 className="mb-1 font-semibold text-zinc-800 dark:text-white">Backend</h4>
+                <p className="text-sm text-zinc-600 dark:text-zinc-300">
                   Building robust APIs and server-side applications
                 </p>
               </div>
@@ -149,8 +148,8 @@ const  AboutSection= () => {
                   <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
                   <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
                 </svg>
-                <h4 className="mb-1 font-semibold text-zinc-900 dark:text-white">Database</h4>
-                <p className="text-sm text-zinc-600 dark:text-zinc-400">Designing efficient data models and queries</p>
+                <h4 className="mb-1 font-semibold text-zinc-800 dark:text-white">Database</h4>
+                <p className="text-sm text-zinc-600 dark:text-zinc-300">Designing efficient data models and queries</p>
               </div>
               <div className="rounded-lg border border-zinc-200 p-4 dark:border-zinc-800">
                 <svg
@@ -169,15 +168,14 @@ const  AboutSection= () => {
                   <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path>
                   <path d="M2 12h20"></path>
                 </svg>
-                <h4 className="mb-1 font-semibold text-zinc-900 dark:text-white">Web Services</h4>
-                <p className="text-sm text-zinc-600 dark:text-zinc-400">Integrating third-party APIs and services</p>
+                <h4 className="mb-1 font-semibold text-zinc-800 dark:text-white">Web Services</h4>
+                <p className="text-sm text-zinc-600 dark:text-zinc-300">Integrating third-party APIs and services</p>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-  )
+      </section>
+    )
 }
 
 export default AboutSection

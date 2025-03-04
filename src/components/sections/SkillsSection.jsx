@@ -25,9 +25,9 @@ const SkillsSection = () => {
       <section id="skills" className=" py-24 ">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-zinc-900 dark:text-white">Tech Stack & Skills</h2>
+            <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-zinc-800 dark:text-white">Tech Stack & Skills</h2>
             <div className="w-20 h-1 bg-blue-500 mx-auto"></div>
-            <p className="mt-4 text-xl text-zinc-600 max-w-3xl mx-auto dark:text-zinc-400">
+            <p className="mt-4 text-xl text-zinc-600 max-w-3xl mx-auto dark:text-zinc-300">
               My expertise spans across various technologies and tools that enable me to build comprehensive solutions
             </p>
           </div>
@@ -64,7 +64,7 @@ const SkillsSection = () => {
                   <path d="M9 15h.01"></path>
                 </svg>
               </div>
-              <h3 className="text-xl font-semibold mb-4 text-zinc-900 dark:text-white">Frontend</h3>
+              <h3 className="text-xl font-semibold mb-4 text-zinc-800 dark:text-white">Frontend</h3>
               <div className="space-y-4">
                 <div className="flex items-center">
                   <div className="w-8 h-8 mr-3 flex items-center justify-center">
@@ -76,7 +76,7 @@ const SkillsSection = () => {
                   </div>
                   <div className="flex-1">
                     <div className="flex justify-between">
-                      <h4 className="font-medium text-zinc-900 dark:text-white">React</h4>
+                      <h4 className="font-medium text-zinc-800 dark:text-white">React</h4>
                       <span className="text-xs px-2 py-1 bg-blue-100 text-blue-800 rounded-full dark:bg-blue-900/30 dark:text-blue-300">
                         Expert
                       </span>
@@ -93,7 +93,7 @@ const SkillsSection = () => {
                   </div>
                   <div className="flex-1">
                     <div className="flex justify-between">
-                      <h4 className="font-medium text-zinc-900 dark:text-white">Next.js</h4>
+                      <h4 className="font-medium text-zinc-800 dark:text-white">Next.js</h4>
                       <span className="text-xs px-2 py-1 bg-blue-100 text-blue-800 rounded-full dark:bg-blue-900/30 dark:text-blue-300">
                         Advanced
                       </span>
@@ -110,7 +110,7 @@ const SkillsSection = () => {
                   </div>
                   <div className="flex-1">
                     <div className="flex justify-between">
-                      <h4 className="font-medium text-zinc-900 dark:text-white">TypeScript</h4>
+                      <h4 className="font-medium text-zinc-800 dark:text-white">TypeScript</h4>
                       <span className="text-xs px-2 py-1 bg-blue-100 text-blue-800 rounded-full dark:bg-blue-900/30 dark:text-blue-300">
                         Intermediate
                       </span>
@@ -127,7 +127,7 @@ const SkillsSection = () => {
                   </div>
                   <div className="flex-1">
                     <div className="flex justify-between">
-                      <h4 className="font-medium text-zinc-900 dark:text-white">Tailwind CSS</h4>
+                      <h4 className="font-medium text-zinc-800 dark:text-white">Tailwind CSS</h4>
                       <span className="text-xs px-2 py-1 bg-blue-100 text-blue-800 rounded-full dark:bg-blue-900/30 dark:text-blue-300">
                         Expert
                       </span>
@@ -167,7 +167,7 @@ const SkillsSection = () => {
                   <line x1="6" x2="6" y1="18" y2="18"></line>
                 </svg>
               </div>
-              <h3 className="text-xl font-semibold mb-4 text-zinc-900 dark:text-white">Backend</h3>
+              <h3 className="text-xl font-semibold mb-4 text-zinc-800 dark:text-white">Backend</h3>
               <div className="space-y-4">
                 <div className="flex items-center">
                   <div className="w-8 h-8 mr-3 flex items-center justify-center">
@@ -179,7 +179,7 @@ const SkillsSection = () => {
                   </div>
                   <div className="flex-1">
                     <div className="flex justify-between">
-                      <h4 className="font-medium text-zinc-900 dark:text-white">Node.js</h4>
+                      <h4 className="font-medium text-zinc-800 dark:text-white">Node.js</h4>
                       <span className="text-xs px-2 py-1 bg-blue-100 text-blue-800 rounded-full dark:bg-blue-900/30 dark:text-blue-300">
                         Advanced
                       </span>
@@ -196,7 +196,7 @@ const SkillsSection = () => {
                   </div>
                   <div className="flex-1">
                     <div className="flex justify-between">
-                      <h4 className="font-medium text-zinc-900 dark:text-white">Express</h4>
+                      <h4 className="font-medium text-zinc-800 dark:text-white">Express</h4>
                       <span className="text-xs px-2 py-1 bg-blue-100 text-blue-800 rounded-full dark:bg-blue-900/30 dark:text-blue-300">
                         Intermediate
                       </span>
@@ -213,7 +213,7 @@ const SkillsSection = () => {
                   </div>
                   <div className="flex-1">
                     <div className="flex justify-between">
-                      <h4 className="font-medium text-zinc-900 dark:text-white">Python</h4>
+                      <h4 className="font-medium text-zinc-800 dark:text-white">Python</h4>
                       <span className="text-xs px-2 py-1 bg-blue-100 text-blue-800 rounded-full dark:bg-blue-900/30 dark:text-blue-300">
                         Moderate
                       </span>
@@ -230,7 +230,7 @@ const SkillsSection = () => {
                   </div>
                   <div className="flex-1">
                     <div className="flex justify-between">
-                      <h4 className="font-medium text-zinc-900 dark:text-white">Django</h4>
+                      <h4 className="font-medium text-zinc-800 dark:text-white">Django</h4>
                       <span className="text-xs px-2 py-1 bg-blue-100 text-blue-800 rounded-full dark:bg-blue-900/30 dark:text-blue-300">
                         Beginner
                       </span>
@@ -269,7 +269,7 @@ const SkillsSection = () => {
                   <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
                 </svg>
               </div>
-              <h3 className="text-xl font-semibold mb-4 text-zinc-900 dark:text-white">Database</h3>
+              <h3 className="text-xl font-semibold mb-4 text-zinc-800 dark:text-white">Database</h3>
               <div className="space-y-4">
                 <div className="flex items-center">
                   <div className="w-8 h-8 mr-3 flex items-center justify-center">
@@ -281,7 +281,7 @@ const SkillsSection = () => {
                   </div>
                   <div className="flex-1">
                     <div className="flex justify-between">
-                      <h4 className="font-medium text-zinc-900 dark:text-white">MongoDB</h4>
+                      <h4 className="font-medium text-zinc-800 dark:text-white">MongoDB</h4>
                       <span className="text-xs px-2 py-1 bg-blue-100 text-blue-800 rounded-full dark:bg-blue-900/30 dark:text-blue-300">
                         Expert
                       </span>
@@ -298,7 +298,7 @@ const SkillsSection = () => {
                   </div>
                   <div className="flex-1">
                     <div className="flex justify-between">
-                      <h4 className="font-medium text-zinc-900 dark:text-white">PostgreSQL</h4>
+                      <h4 className="font-medium text-zinc-800 dark:text-white">PostgreSQL</h4>
                       <span className="text-xs px-2 py-1 bg-blue-100 text-blue-800 rounded-full dark:bg-blue-900/30 dark:text-blue-300">
                         Intermediate
                       </span>
@@ -315,7 +315,7 @@ const SkillsSection = () => {
                   </div>
                   <div className="flex-1">
                     <div className="flex justify-between">
-                      <h4 className="font-medium text-zinc-900 dark:text-white">MySQL</h4>
+                      <h4 className="font-medium text-zinc-800 dark:text-white">MySQL</h4>
                       <span className="text-xs px-2 py-1 bg-blue-100 text-blue-800 rounded-full dark:bg-blue-900/30 dark:text-blue-300">
                         Moderate
                       </span>
@@ -332,7 +332,7 @@ const SkillsSection = () => {
                   </div>
                   <div className="flex-1">
                     <div className="flex justify-between">
-                      <h4 className="font-medium text-zinc-900 dark:text-white">Firebase</h4>
+                      <h4 className="font-medium text-zinc-800 dark:text-white">Firebase</h4>
                       <span className="text-xs px-2 py-1 bg-blue-100 text-blue-800 rounded-full dark:bg-blue-900/30 dark:text-blue-300">
                         Advanced
                       </span>
@@ -370,7 +370,7 @@ const SkillsSection = () => {
                   <polyline points="8 6 2 12 8 18"></polyline>
                 </svg>
               </div>
-              <h3 className="text-xl font-semibold mb-4 text-zinc-900 dark:text-white">Tools & Others</h3>
+              <h3 className="text-xl font-semibold mb-4 text-zinc-800 dark:text-white">Tools & Others</h3>
               <div className="space-y-4">
                 <div className="flex items-center">
                   <div className="w-8 h-8 mr-3 flex items-center justify-center">
@@ -382,7 +382,7 @@ const SkillsSection = () => {
                   </div>
                   <div className="flex-1">
                     <div className="flex justify-between">
-                      <h4 className="font-medium text-zinc-900 dark:text-white">Git</h4>
+                      <h4 className="font-medium text-zinc-800 dark:text-white">Git</h4>
                       <span className="text-xs px-2 py-1 bg-blue-100 text-blue-800 rounded-full dark:bg-blue-900/30 dark:text-blue-300">
                         Expert
                       </span>
@@ -399,7 +399,7 @@ const SkillsSection = () => {
                   </div>
                   <div className="flex-1">
                     <div className="flex justify-between">
-                      <h4 className="font-medium text-zinc-900 dark:text-white">Docker</h4>
+                      <h4 className="font-medium text-zinc-800 dark:text-white">Docker</h4>
                       <span className="text-xs px-2 py-1 bg-blue-100 text-blue-800 rounded-full dark:bg-blue-900/30 dark:text-blue-300">
                         Beginner
                       </span>
@@ -416,7 +416,7 @@ const SkillsSection = () => {
                   </div>
                   <div className="flex-1">
                     <div className="flex justify-between">
-                      <h4 className="font-medium text-zinc-900 dark:text-white">Linux</h4>
+                      <h4 className="font-medium text-zinc-800 dark:text-white">Linux</h4>
                       <span className="text-xs px-2 py-1 bg-blue-100 text-blue-800 rounded-full dark:bg-blue-900/30 dark:text-blue-300">
                         Intermediate
                       </span>
@@ -433,7 +433,7 @@ const SkillsSection = () => {
                   </div>
                   <div className="flex-1">
                     <div className="flex justify-between">
-                      <h4 className="font-medium text-zinc-900 dark:text-white">Figma</h4>
+                      <h4 className="font-medium text-zinc-800 dark:text-white">Figma</h4>
                       <span className="text-xs px-2 py-1 bg-blue-100 text-blue-800 rounded-full dark:bg-blue-900/30 dark:text-blue-300">
                         Moderate
                       </span>
@@ -447,7 +447,7 @@ const SkillsSection = () => {
           {/* Problem Solving Section */}
           <div className="mt-20">
             <div className="text-center mb-12">
-              <h3 className="text-2xl sm:text-3xl font-bold mb-4 text-zinc-900 dark:text-white">
+              <h3 className="text-2xl sm:text-3xl font-bold mb-4 text-zinc-800 dark:text-white">
                 Problem Solving & Algorithms
               </h3>
               <div className="w-16 h-1 bg-blue-500 mx-auto"></div>
@@ -463,7 +463,7 @@ const SkillsSection = () => {
                   />
                 </div>
                 <div className="md:w-2/3 md:pl-10">
-                  <p className="text-zinc-600 mb-6 dark:text-zinc-400">
+                  <p className="text-zinc-600 mb-6 dark:text-zinc-300">
                     I have a passion for solving challenging problems through algorithmic thinking and efficient
                     solutions. My expertise includes:
                   </p>

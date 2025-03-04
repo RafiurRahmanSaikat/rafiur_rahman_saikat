@@ -10,7 +10,7 @@ const SectionHeading = ({ title, subtitle, centered = true }) => {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: "-100px" }}
         transition={{ duration: 0.5 }}
-        className="text-3xl font-bold tracking-tight text-zinc-900 dark:text-white sm:text-4xl"
+        className="text-3xl font-bold tracking-tight text-zinc-800 dark:text-white sm:text-4xl"
       >
         {title}
       </motion.h2>
@@ -20,7 +20,7 @@ const SectionHeading = ({ title, subtitle, centered = true }) => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.5, delay: 0.1 }}
-          className="mt-4 max-w-2xl text-lg text-zinc-600 dark:text-zinc-400 mx-auto"
+          className="mt-4 max-w-2xl text-lg text-zinc-600 dark:text-zinc-300 mx-auto"
         >
           {subtitle}
         </motion.p>

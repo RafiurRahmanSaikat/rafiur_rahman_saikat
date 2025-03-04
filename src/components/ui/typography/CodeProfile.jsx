@@ -176,7 +176,7 @@ const CodeProfile = () => {
     <section className="py-16 ">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* <div className="text-center mb-10">
-          <h2 className="text-3xl font-bold text-zinc-900 dark:text-white"> Inside JavaScript</h2>
+          <h2 className="text-3xl font-bold text-zinc-800 dark:text-white"> Inside JavaScript</h2>
           <div className="w-16 h-1 bg-primary mx-auto mt-2"></div>
         </div> */}
 

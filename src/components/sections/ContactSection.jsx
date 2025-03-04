@@ -17,17 +17,17 @@ const ContactSection = () => {
               transition={{ duration: 0.5 }}
               className="rounded-lg bg-white p-8 shadow-sm dark:bg-zinc-800"
             >
-              <h3 className="mb-6 text-2xl font-bold text-zinc-900 dark:text-white">Contact Information</h3>
+              <h3 className="mb-6 text-2xl font-bold text-zinc-800 dark:text-white">Contact Information</h3>
               <div className="space-y-6">
                 <div className="flex items-start">
                   <div className="mr-4 flex h-10 w-10 items-center justify-center rounded-full bg-blue-100 text-blue-600 dark:bg-blue-900/30 dark:text-blue-400">
                     <Mail className="h-5 w-5" />
                   </div>
                   <div>
-                    <h4 className="text-sm font-medium text-zinc-500 dark:text-zinc-400">Email</h4>
+                    <h4 className="text-sm font-medium text-zinc-500 dark:text-zinc-300">Email</h4>
                     <a
                       href="mailto:md.rafiur.rahman.saikat@gmail.com"
-                      className="text-lg font-medium text-zinc-900 hover:text-blue-600 dark:text-white dark:hover:text-blue-400"
+                      className="text-lg font-medium text-zinc-800 hover:text-blue-600 dark:text-white dark:hover:text-blue-400"
                     >
                       md.rafiur.rahman.saikat@gmail.com
                     </a>
@@ -39,8 +39,8 @@ const ContactSection = () => {
                     <MapPin className="h-5 w-5" />
                   </div>
                   <div>
-                    <h4 className="text-sm font-medium text-zinc-500 dark:text-zinc-400">Location</h4>
-                    <p className="text-lg font-medium text-zinc-900 dark:text-white">Sylhet, Bangladesh</p>
+                    <h4 className="text-sm font-medium text-zinc-500 dark:text-zinc-300">Location</h4>
+                    <p className="text-lg font-medium text-zinc-800 dark:text-white">Sylhet, Bangladesh</p>
                   </div>
                 </div>
 
@@ -49,14 +49,14 @@ const ContactSection = () => {
                     <Phone className="h-5 w-5" />
                   </div>
                   <div>
-                    <h4 className="text-sm font-medium text-zinc-500 dark:text-zinc-400">Phone</h4>
-                    <p className="text-lg font-medium text-zinc-900 dark:text-white">+880 1647076735</p>
+                    <h4 className="text-sm font-medium text-zinc-500 dark:text-zinc-300">Phone</h4>
+                    <p className="text-lg font-medium text-zinc-800 dark:text-white">+880 1647076735</p>
                   </div>
                 </div>
               </div>
 
               <div className="mt-8">
-                <h4 className="mb-4 text-lg font-semibold text-zinc-900 dark:text-white">Follow Me</h4>
+                <h4 className="mb-4 text-lg font-semibold text-zinc-800 dark:text-white">Follow Me</h4>
                 <div className="flex space-x-4">
                   <a
                     href="https://github.com/RafiurRahmanSaikat"
@@ -99,54 +99,54 @@ const ContactSection = () => {
               transition={{ duration: 0.5 }}
               className="rounded-lg bg-white p-8 shadow-sm dark:bg-zinc-800"
             >
-              <h3 className="mb-6 text-2xl font-bold text-zinc-900 dark:text-white">Send Me a Message</h3>
+              <h3 className="mb-6 text-2xl font-bold text-zinc-800 dark:text-white">Send Me a Message</h3>
               <form className="space-y-4">
                 <div className="grid gap-4 sm:grid-cols-2">
                   <div>
-                    <label htmlFor="name" className="mb-2 block text-sm font-medium text-zinc-900 dark:text-white">
+                    <label htmlFor="name" className="mb-2 block text-sm font-medium text-zinc-800 dark:text-white">
                       Your Name
                     </label>
                     <input
                       type="text"
                       id="name"
-                      className="w-full rounded-lg border border-zinc-300 bg-white px-4 py-2.5 text-zinc-900 focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500 dark:border-zinc-700 dark:bg-zinc-900 dark:text-white dark:focus:border-blue-500"
+                      className="w-full rounded-lg border border-zinc-300 bg-white px-4 py-2.5 text-zinc-800 focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500 dark:border-zinc-700 dark:bg-zinc-900 dark:text-white dark:focus:border-blue-500"
                       placeholder="John Doe"
                       required
                     />
                   </div>
                   <div>
-                    <label htmlFor="email" className="mb-2 block text-sm font-medium text-zinc-900 dark:text-white">
+                    <label htmlFor="email" className="mb-2 block text-sm font-medium text-zinc-800 dark:text-white">
                       Your Email
                     </label>
                     <input
                       type="email"
                       id="email"
-                      className="w-full rounded-lg border border-zinc-300 bg-white px-4 py-2.5 text-zinc-900 focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500 dark:border-zinc-700 dark:bg-zinc-900 dark:text-white dark:focus:border-blue-500"
+                      className="w-full rounded-lg border border-zinc-300 bg-white px-4 py-2.5 text-zinc-800 focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500 dark:border-zinc-700 dark:bg-zinc-900 dark:text-white dark:focus:border-blue-500"
                       placeholder="john@example.com"
                       required
                     />
                   </div>
                 </div>
                 <div>
-                  <label htmlFor="subject" className="mb-2 block text-sm font-medium text-zinc-900 dark:text-white">
+                  <label htmlFor="subject" className="mb-2 block text-sm font-medium text-zinc-800 dark:text-white">
                     Subject
                   </label>
                   <input
                     type="text"
                     id="subject"
-                    className="w-full rounded-lg border border-zinc-300 bg-white px-4 py-2.5 text-zinc-900 focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500 dark:border-zinc-700 dark:bg-zinc-900 dark:text-white dark:focus:border-blue-500"
+                    className="w-full rounded-lg border border-zinc-300 bg-white px-4 py-2.5 text-zinc-800 focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500 dark:border-zinc-700 dark:bg-zinc-900 dark:text-white dark:focus:border-blue-500"
                     placeholder="Project Inquiry"
                     required
                   />
                 </div>
                 <div>
-                  <label htmlFor="message" className="mb-2 block text-sm font-medium text-zinc-900 dark:text-white">
+                  <label htmlFor="message" className="mb-2 block text-sm font-medium text-zinc-800 dark:text-white">
                     Message
                   </label>
                   <textarea
                     id="message"
                     rows={5}
-                    className="w-full rounded-lg border border-zinc-300 bg-white px-4 py-2.5 text-zinc-900 focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500 dark:border-zinc-700 dark:bg-zinc-900 dark:text-white dark:focus:border-blue-500"
+                    className="w-full rounded-lg border border-zinc-300 bg-white px-4 py-2.5 text-zinc-800 focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500 dark:border-zinc-700 dark:bg-zinc-900 dark:text-white dark:focus:border-blue-500"
                     placeholder="Your message here..."
                     required
                   ></textarea>

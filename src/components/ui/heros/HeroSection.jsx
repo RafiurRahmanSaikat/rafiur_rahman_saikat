@@ -47,10 +47,10 @@ const HeroContent = () => {
     </div> */}
 
     {/* Main heading with gradient text */}
-    {/* <h1 className="mb-6 text-center text-4xl font-bold tracking-tight text-zinc-900 dark:text-white sm:text-5xl md:text-6xl lg:text-7xl"> */}
-    <div className="m-6 text-center text-4xl font-bold tracking-tight text-zinc-800 dark:text-white sm:text-5xl md:text-6xl lg:text-9xl ">
-      I'm
-      <p className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent dark:from-blue-400 dark:to-purple-400 font-pacifico  font-extralight">
+    {/* <h1 className="mb-6 text-center text-4xl font-bold tracking-tight text-zinc-800 dark:text-white sm:text-5xl md:text-6xl lg:text-7xl"> */}
+    <div className="m-6 text-center text-4xl font-extrabold tracking-tight text-zinc-800 dark:text-white sm:text-5xl md:text-6xl font-pacifico lg:text-9xl   ">
+      Hi . . . I'm
+      <p className="p-10 mx-auto bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent dark:from-blue-400 dark:to-purple-400  font-thin">
         Rafiur Rahman Saikat .
       </p>
     </div>
