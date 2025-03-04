@@ -115,7 +115,7 @@ const Navbar = () => {
         </div>
 
         {isMenuOpen && (
-          <div className="px-4 pb-4 md:hidden">
+          <div className=" w-[80vw] mx-auto pb-4 md:hidden">
             {navLinks.map((link) => (
               <NavLink
                 key={link.href}
