@@ -7,7 +7,6 @@ import rehypeRaw from 'rehype-raw';
 import remarkGfm from 'remark-gfm';
 import { projects } from '../../data/projects';
 
-// Import projects data
 
 
 const ProjectDetailsPage = () => {
@@ -136,7 +135,7 @@ const ProjectDetailsPage = () => {
   }
 
   return (
-    <div className="container mx-auto px-4 py-12   min-h-screen">
+    <div className="container mx-auto px-4 py-12   min-h-screen dark:bg-zinc-900 ">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}

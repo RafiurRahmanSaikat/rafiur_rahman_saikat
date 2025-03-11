@@ -1,4 +1,4 @@
-import { ExternalLink, Github, GithubIcon } from "lucide-react";
+import { ArrowRight, ExternalLink, Github, GithubIcon } from "lucide-react";
 import { motion } from "motion/react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
@@ -46,7 +46,7 @@ const ProjectsSection = () => {
               className="group overflow-hidden rounded-lg border border-zinc-200 bg-white shadow-sm transition-all hover:shadow-md dark:border-zinc-800 dark:bg-zinc-900"
             >
 
-      <Link to={`/project/${project.id}`}>
+
               <div className="relative overflow-hidden cursor-pointer">
                 <img
                   src={project.image || "/placeholder.svg"}
@@ -54,7 +54,9 @@ const ProjectsSection = () => {
                   className="h-48 w-full object-cover transition-transform duration-500 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-zinc-900/70 to-transparent opacity-0 transition-opacity group-hover:opacity-100"></div>
+
                 <div className="absolute bottom-0 left-0 right-0 flex justify-end space-x-2 p-4 opacity-0 transition-opacity group-hover:opacity-100">
+
                   {project.githubUrl && (
                     <a
                       href={project.githubUrl}
@@ -77,8 +79,20 @@ const ProjectsSection = () => {
                       <ExternalLink className="h-5 w-5" />
                     </a>
                   )}
+                <Link to={`/project/${project.id}`}
+        className="group  relative inline-flex items-center justify-center overflow-hidden rounded-lg bg-gradient-to-br from-blue-500 to-purple-600 p-0.5 font-medium text-white hover:text-white focus:outline-none focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-800"
+      >
+        <span className="relative rounded-md p-1 transition-all duration-100 ease-in group-hover:bg-opacity-0 ">
+          <span className="flex items-center">
+         Details
+         <ArrowRight size={20} className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1"/>
+
+          </span>
+        </span>
+      </Link>
                 </div>
               </div>
+
 
               <div className="p-6">
                 <div className="mb-2 flex items-center justify-between">
@@ -99,7 +113,7 @@ const ProjectsSection = () => {
                   ))}
                 </div>
               </div>
-              </Link>
+
             </motion.div>
           ))}
         </div>
